@@ -1,0 +1,49 @@
+{
+	"name": "DP Transfer Account",
+	"description": "Tranfers DP from account to account.",
+	"author": {
+		"name": "Demacian.ir",
+		"website": "http://www.wow-market.com/"
+	},
+	
+	"admin": [
+		{
+			"text": "Store",
+			"icon": "share",
+			"links": [
+				{
+					"text": "DP transfer logs",
+					"icon": "list",
+					"controller": "admin",
+					"requirePermission": "viewAdmin"
+				}
+			]
+		}
+	],
+
+	"permissions": {
+		"use_cta": {"default" : true, "description": "Allow DP transfers." },
+		"viewAdmin": {"default" : false, "description": "View the DP transfer logs." }
+	},
+
+	"roles": {
+		"use": {
+			"description": "Allow DP transfers.",
+
+			"permissions": {
+				"use_cta": true
+			}
+		},
+
+		"administrate": {
+			"description": "View the DP transfer logs.",
+			"dangerLevel": 2,
+
+			"permissions": {
+				"viewAdmin": true
+			}
+		}
+	},
+	
+	"enabled": true
+}

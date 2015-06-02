@@ -1,0 +1,81 @@
+{
+	"name":"Vote panel",
+	"description":"Obtain vote points by voting",
+	"author":
+	{
+		"name":"FusionCMS",
+		"website":"http:\/\/fusion-hub.com"
+	},
+	"permissions":
+	{
+		"view":
+		{
+			"default":true,
+			"description":"نمایش صفحه رأی"
+		},
+		"canViewAdmin":
+		{
+			"default":false,
+			"description":"نمایش صفحه مدیر"
+		},
+		"canCreate":
+		{
+			"default":false,
+			"description":"افزودن یک سایت رتبه بندی"
+		},
+		"canEdit":
+		{
+			"default":false,
+			"description":"ویرایش یک سایت رتبه بندی"
+		},
+		"canDelete":
+		{
+			"default":false,
+			"description":"حذف یک سایت رتبه بندی"
+		}
+	},
+	"roles":
+	{
+		"view":
+		{
+			"description":"نمایش ماژول رای",
+			"permissions":
+			{
+				"view":true
+			}
+		},
+		"manage":
+		{
+			"description":"مدیریت سایت های رتبه بندی <font style='color:red;'>ابزار مدیریت<\/font>",
+			"dangerLevel":2,
+			"permissions":
+			{
+				"canViewAdmin":true,
+				"canCreate":true,
+				"canEdit":true,
+				"canDelete":true
+			}
+		}
+	},
+	"admin":
+	[
+		
+		{
+			"text":"فروشگاه",
+			"icon":"share",
+			"links":
+			[
+				
+				{
+					"text":"سایت های رتبه بندی",
+					"icon":"link",
+					"controller":"admin",
+					"requirePermission":"canViewAdmin"
+				}
+			]
+			
+		}
+	]
+	,
+	"enabled":true
+}

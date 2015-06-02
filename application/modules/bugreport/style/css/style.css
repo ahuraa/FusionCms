@@ -1,0 +1,212 @@
+/***************************************************************************
+In Order To Change Background Colors Box Simply Login To Admin Panel And Edit
+BugTracker's Module Config
+***************************************************************************/
+/*************************** Style Of Index.tpl ****************************
+***************************************************************************/
+
+.submited,.approved,.information{
+	text-align: center;
+	text-shadow: 0 0 5px rgba(0,0,0,.4);
+
+	border-radius: 5px;
+	transition-property: opacity,text-shadow;
+	transition-duration: 1.5s;
+	text-shadow: 0px 0px 10px;
+}
+.submited:hover,.approved:hover,.submit:hover{
+	opacity: 0.7;
+	cursor:pointer;
+	text-shadow: none;
+}
+.information:hover{
+	text-shadow: none;
+	cursor:pointer;
+	opacity: 0.9;
+}
+.approved,.information{
+box-shadow: 0 0 8px rgba(0,0,0,.3), 0 1px 1px rgba(0,0,0,.2), inset 0 0 0 1px rgba(255,255,255,.015), inset 0 0 15px rgba(0,0,0,.015), inset 0 0 15px rgba(0,255,0,.05), inset 0 0 0 1px rgba(0,255,0,.05);
+}
+.submited,.submit{
+box-shadow: 0 0 8px rgba(0,0,0,.3), 0 1px 1px rgba(0,0,0,.2), inset 0 0 0 1px rgba(255,255,255,.015), inset 0 0 15px rgba(0,0,0,.015);
+}
+.submited{
+	float:left;
+	font-size: 25px;
+	color: white;
+	padding-top: 30px;
+		width: 350px;
+	height: 150px;
+}
+.approved{
+	float: right;
+	font-size: 25px;
+	color: white;
+	padding-top: 30px;
+	width: 350px;
+	height: 150px;
+}
+.information{
+	line-height: 300%;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	margin-top:5px;
+	float:left;
+	color: white;
+	width: 98%;
+	height:auto;
+	border-radius: 5px;
+	text-align: left;
+}
+#submit{
+	width: 340px;
+	height: 30px;
+	color:white;
+	font-size: 15px;
+	cursor: pointer;
+}
+/*************************************************************************
+*************************** Style Of form.tpl ****************************
+*************************************************************************/
+.label{
+	font-size: 15px;
+	text-align: center;
+	font-color:white;
+	text-shadow: 0px 0px 5px;
+	transition-property: text-shadow;
+	transition-duration: 1.5s;
+}
+#priority{
+	margin-top: 10px;
+	width: 100%;
+	margin-left: -10px;
+}
+.bug_explain{
+	margin-top: 5px;
+	width:100%; 
+	height:100px;
+	margin-left: -10px;
+}
+#submit_form{
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	cursor: pointer;
+	text-shadow: 0px 0px 10px;
+	margin-left: -10px;
+}
+#submit_form:hover,.label:hover{
+	text-shadow: none;
+}
+#submit_form,#priority{
+	transition-property: text-shadow;
+	transition-duration: 1.5s;
+}
+#title{
+	width: 100%;
+	margin-left: -10px;
+}
+/*************************************************************************
+************************** Style Of submit.tpl ***************************
+*************************************************************************/
+.notification{
+background-color: #0F8200;
+border-color: #d4ebaf;
+color: white;
+border-radius: 5px;
+width: 100%;
+height: auto;
+border-width: 1px;
+border-style: solid;
+text-align: center;
+font-size: 15px;
+line-height: 350%;
+text-shadow: 0px 0px 3px;
+transition-property: text-shadow,background-color;
+transition-duration: 1.5s;
+}
+.notification:hover{
+	text-shadow: none;
+	background-color: #0C6B00;
+}
+/*************************************************************************
+************************** Style Of notdev.tpl ***************************
+*************************************************************************/
+#notif{
+background-color: #C20000;
+border-color: #570000;
+color: white;
+border-radius: 5px;
+width: 100%;
+height: auto;
+border-width: 1px;
+border-style: solid;
+text-align: center;
+font-size: 15px;
+line-height: 350%;
+text-shadow: 0px 0px 3px;
+transition-property: text-shadow,background-color;
+transition-duration: 1.5s;
+}
+#notif:hover{
+	text-shadow: none;
+	background-color: #7A0000;
+}
+/*************************************************************************
+************************** Style Of admin.tpl  ***************************
+*************************************************************************/
+.result{
+	margin-top: 15px;
+	background-color: #C20000;
+	border-color: #570000;
+	color: white;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	border-width: 1px;
+	border-style: solid;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-left: -10px;
+	font-size: 15px;
+	text-shadow: 0px 0px 3px;
+	transition-property: text-shadow,background-color;
+	transition-duration: 1.5s;
+}
+.result:hover{
+	text-shadow: none;
+	background-color: #7A0000;
+}
+#bug_fix{
+	margin-left: -10px;
+	width: 100%;
+}
+#bug_submit{
+	margin-left: -10px;
+	width: 100%;
+	font-size: 15px;
+}
+.result_fix{
+	margin-top: 15px;
+	background-color: #0F8200;
+	border-color: #0A7D00;
+	color: white;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	border-width: 1px;
+	border-style: solid;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-left: -10px;
+	font-size: 15px;
+	text-shadow: 0px 0px 3px;
+	transition-property: text-shadow,background-color;
+	transition-duration: 1.5s;
+}
+.result_fix:hover{
+	text-shadow: none;
+	background-color: #0C6B00;
+}

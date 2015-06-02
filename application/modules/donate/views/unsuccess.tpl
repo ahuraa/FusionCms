@@ -1,0 +1,1 @@
+<center style="padding:10px;">{$message}</center>

@@ -1,0 +1,24 @@
+{
+	"name": "Unban Character",
+	"description": "Unban character",
+	"author": {
+		"name": "Demacian.ir",
+		"website": "Cmswow.ir"
+	},
+	
+	"permissions": {
+		"view": {"default" : true, "description": "View the Unban Character screen." }
+	},
+
+	"roles": {
+		"view": {
+			"description": "View the Unban character module.",
+			
+			"permissions": {
+				"view": true
+			}
+		}
+	},
+
+	"enabled": true
+}
